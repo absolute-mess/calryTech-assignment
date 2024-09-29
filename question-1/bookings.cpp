@@ -51,7 +51,7 @@ signed main() {
                 cout<<"Invalid booking\n";
                 return 0;
             }
-            bookings[i]={st, en};   //Add the booking
+            bookings.push_back({st, en});   //Add the booking
         }
     }
     else {
@@ -67,12 +67,12 @@ signed main() {
     return 0;
 }
 
-// Testcases
-// 1: choice 1 : bookings: [[1,3],[4,6],[8,12]] : output: [[1, 3], [4, 6], [8, 12]] //Non-overlapping bookings
-// 2: choice 1 : bookings: [[1,3],[2,4],[5,7]] : output: [[1, 4], [5, 7]] //Overlapping bookings
-// 3: choice 1 : bookings: [[1,3],[3,6]] : output: [[1, 6]] //Touching bookings
-// 4: choice 1 : bookings: [] : output: [] //Empty list of bookings
-// 5: choice 2 : n = -1 : output: Invalid number of bookings
-// 6: choice 2 : n = 2, bookings: [[3,7], [7,4]] //Invalid booking
-// 7: choice 2 : n = 3, bookings: [[6,18], [2,4], [17,45]]: output: [[2, 4], [6, 45]] //Non-overlapping bookings
-// 8: choice 2 : n = 0, bookings: [] : output: [] //Empty list of bookings
+
+Testcase 1: choice 1 : bookings: [[1,3],[4,6],[8,12]] : output: [[1, 3], [4, 6], [8, 12]] //Non-overlapping bookings
+Testcase 2: choice 1 : bookings: [[1,3],[2,4],[5,7]] : output: [[1, 4], [5, 7]] //Overlapping bookings
+Testcase 3: choice 1 : bookings: [[1,3],[3,6]] : output: [[1, 6]] //Touching bookings
+Testcase 4: choice 1 : bookings: [] : output: [] //Empty list of bookings
+Testcase 5: choice 2 : n = -1 : output: Invalid number of bookings
+Testcase 6: choice 2 : n = 2, bookings: [[3,7], [7,4]] //Invalid booking
+Testcase 7: choice 2 : n = 3, bookings: [[6,18], [2,4], [17,45]]: output: [[2, 4], [6, 45]] //Non-overlapping bookings
+Testcase 8: choice 2 : n = 0, bookings: [] : output: [] //Empty list of bookings
